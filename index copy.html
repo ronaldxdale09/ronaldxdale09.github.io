@@ -559,66 +559,6 @@
                 flex-direction: column;
             }
         }
-        /* Modal Styles */
-        
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            padding-top: 60px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.9);
-        }
-        
-        .modal-content {
-            margin: auto;
-            display: block;
-            max-width: 80%;
-            max-height: 80%;
-            border-radius: 10px;
-        }
-        
-        .close {
-            position: absolute;
-            top: 20px;
-            right: 35px;
-            color: #fff;
-            font-size: 40px;
-            font-weight: bold;
-            transition: 0.3s;
-            cursor: pointer;
-        }
-        
-        .close:hover,
-        .close:focus {
-            color: #bbb;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        
-        .project-features {
-            list-style: none;
-            padding-left: 1.5rem;
-            margin: 1rem 0;
-        }
-        
-        .project-features li {
-            position: relative;
-            margin: 0.5rem 0;
-            padding-left: 1.5rem;
-            font-size: 0.9em;
-        }
-        
-        .project-features li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #6f4e37;
-        }
     </style>
 </head>
 
@@ -655,7 +595,7 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="img/ronaldxdale.jpg" alt="Ronald Dale Fuentebella" class="profile-image">
+                    <img src="/api/placeholder/400/400" alt="Ronald Dale Fuentebella" class="profile-image">
                 </div>
             </div>
         </div>
@@ -705,7 +645,7 @@
                 <div class="skill-card">
                     <i class="fas fa-server skill-icon"></i>
                     <h3>Backend</h3>
-                    <p>PHP, Python, Laravel, C#</p>
+                    <p>PHP, Python, Node.js</p>
                     <div class="skill-level">
                         <div class="skill-progress" style="width: 90%"></div>
                     </div>
@@ -737,11 +677,8 @@
                 <p>Some of my recent work</p>
             </div>
             <div class="projects-grid">
-                <!-- Kalunkopi Shop -->
                 <div class="project-card">
-                    <div class="project-image-container">
-                        <img src="img/project/kalunkopi.png" alt="Kalunkopi Shop" class="project-image">
-                    </div>
+                    <img src="img/project/kalunkopi.png" alt="Kalunkopi Shop" class="project-image">
                     <div class="project-content">
                         <h3>Kalunkopi Shop</h3>
                         <p>E-commerce platform with secure payment processing and inventory management system.</p>
@@ -749,6 +686,7 @@
                             <span class="tech-tag">PHP</span>
                             <span class="tech-tag">HTML5</span>
                             <span class="tech-tag">CSS3</span>
+
                             <span class="tech-tag">JavaScript</span>
                         </div>
                         <div class="project-card-buttons">
@@ -758,117 +696,6 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <img src="img/project/serdac.png" alt="SERDAC-WMSU" class="project-image">
-                    </div>
-                    <div class="project-content">
-                        <h3>SERDAC-WMSU</h3>
-                        <p class="project-description">
-                            A socio-economic research and data analytics platform designed to enhance research capabilities and provide data-driven insights.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag"><i class="fab fa-laravel"></i> Laravel</span>
-                            <span class="tech-tag"><i class="fas fa-database"></i> MySQL</span>
-                            <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
-                        </div>
-                        <div class="project-card-buttons">
-                            <a href="https://serdac-wmsu.online" target="_blank" class="card-btn primary">
-                                <i class="fas fa-external-link-alt"></i> Visit Site
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- ERP System -->
-                <div class="project-card">
-                    <img src="img/project/encompany.png" alt="EJN Rubber Processing Plant" class="project-image">
-                    <div class="project-content">
-                        <h3>EJN Rubber Processing Plant</h3>
-                        <p class="project-description">
-                            Comprehensive ERP system for rubber, copra, and coffee trading, featuring:
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-
-                        <div class="project-card-buttons">
-                            <a href="https://ejncompany.com" target="_blank" class="card-btn primary">
-                                <i class="fas fa-external-link-alt"></i> Visit Site
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- EN-RUBBER Processing Service System -->
-                <div class="project-card">
-                    <img src="img/project/en-rubber.png" alt="EN-RUBBER Processing Service System" class="project-image">
-                    <div class="project-content">
-                        <h3>EN-RUBBER Processing</h3>
-                        <p>Integrated system for rubber processing, including purchase, sales, inventory, and expense management.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">Laravel</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-card-buttons">
-                            <a href="#" target="_blank" class="card-btn secondary">
-                                <i class="fab fas fa-lock	"></i> Private Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- NTC POS & Inventory System -->
-                <div class="project-card">
-                    <img src="img/project/ntc_pos.png" alt="NTC POS & Inventory System" class="project-image">
-                    <div class="project-content">
-                        <h3>NTC POS & Inventory</h3>
-                        <p>Point-of-sale and inventory management system for tracking products across multiple warehouses.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">Laravel</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">Bootstrap</span>
-                        </div>
-                        <div class="project-card-buttons">
-
-                            <a href="#" target="_blank" class="card-btn secondary">
-                                <i class="fab fas fa-lock	"></i> Private Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <img src="img/project/healthcare.png" alt="Health Center System" class="project-image">
-                    </div>
-                    <div class="project-content">
-                        <h3>Health Center System</h3>
-                        <p class="project-description">
-                            A comprehensive system for managing health center operations, including patient records, appointments, and medical inventory.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag"><i class="fab fa-php"></i> PHP</span>
-                            <span class="tech-tag"><i class="fas fa-database"></i> MySQL</span>
-                            <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
-                        </div>
-                        <div class="project-card-buttons">
-                            <a href="https://github.com/ronaldxdale09/health_center_system" target="_blank" class="card-btn primary">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Face Recognition System -->
                 <div class="project-card">
                     <img src="img/project/face_rec.jpg" alt="Face Recognition System" class="project-image">
                     <div class="project-content">
@@ -880,36 +707,28 @@
                             <span class="tech-tag">MySQL</span>
                         </div>
                         <div class="project-card-buttons">
+
                             <a href="https://github.com/ronaldxdale09/facerecognition-wmsu" target="_blank" class="card-btn secondary">
                                 <i class="fab fa-github"></i> View Code
                             </a>
                         </div>
                     </div>
                 </div>
-
                 <div class="project-card">
-                    <div class="project-image-container">
-                        <img src="img/project/speech.png" alt="Speech Diarization" class="project-image">
-                    </div>
+                    <img src="/api/placeholder/400/200" alt="ERP System" class="project-image">
                     <div class="project-content">
-                        <h3>Speech Diarization</h3>
-                        <p class="project-description">
-                            A system for identifying and segmenting speech by different speakers in audio recordings.
-                        </p>
-                        <ul class="project-features">
-                            <li>🎤 Speaker identification and segmentation</li>
-                            <li>🔍 Audio analysis and processing</li>
-                            <li>📊 Visualization of speaker segments</li>
-                            <li>📂 Support for multiple audio formats</li>
-                            <li>🔒 Secure and efficient processing</li>
-                        </ul>
+                        <h3>ERP Systems</h3>
+                        <p>Comprehensive enterprise resource planning solutions for multiple businesses.</p>
                         <div class="project-tech">
-                            <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
-                            <span class="tech-tag"><i class="fas fa-database"></i> Resemblyzer</span>
-                            <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">PostgreSQL</span>
                         </div>
                         <div class="project-card-buttons">
-                            <a href="https://github.com/ronaldxdale09/speech-diarization" target="_blank" class="card-btn primary">
+                            <a href="https://erp-system-demo.com" target="_blank" class="card-btn primary">
+                                <i class="fas fa-external-link-alt"></i> Visit Site
+                            </a>
+                            <a href="https://github.com/ronaldxdale/erp-system" target="_blank" class="card-btn secondary">
                                 <i class="fab fa-github"></i> View Code
                             </a>
                         </div>
@@ -1011,11 +830,6 @@
         </div>
     </footer>
 
-    <!-- Image Popup Modal -->
-    <div id="image-modal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modal-image">
-    </div>
     <script>
         // Navbar scroll effect
         window.addEventListener('scroll', () => {
@@ -1077,40 +891,6 @@
             card.style.transform = 'translateY(20px)';
             card.style.transition = 'all 0.5s ease-out';
             projectObserver.observe(card);
-        });
-
-
-        // Get the modal and modal image elements
-        const modal = document.getElementById("image-modal");
-        const modalImg = document.getElementById("modal-image");
-        const closeBtn = document.querySelector(".close");
-
-        // Function to open the modal with the clicked image
-        function openModal(imgSrc) {
-            modal.style.display = "block";
-            modalImg.src = imgSrc;
-        }
-
-        // Function to close the modal
-        function closeModal() {
-            modal.style.display = "none";
-        }
-
-        // Add click event listeners to all project images
-        document.querySelectorAll(".project-image").forEach(image => {
-            image.addEventListener("click", () => {
-                openModal(image.src);
-            });
-        });
-
-        // Close modal when clicking the close button
-        closeBtn.addEventListener("click", closeModal);
-
-        // Close modal when clicking outside the image
-        window.addEventListener("click", (event) => {
-            if (event.target === modal) {
-                closeModal();
-            }
         });
     </script>
 </body>
